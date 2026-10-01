@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    Aqui fica a Lista de tarefas
+    {{ lista }}
+
+    <form action="/add" method="post">
+        <input type="text" name="nova">
+        <button type="submit">Adicionar</button>
+    </form>    
+</body>
+</html>
